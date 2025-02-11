@@ -11,10 +11,14 @@ jobs:
   build:
   runs-on: ubuntu-latest
   steps:
-    - name: 
-      run: |
-        npm install
-        npm run build
+    - name: Checkout source code.
+        uses: actions/checkout@v2    
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./cgv-front #디렉토리명    
+    - name: Build
+      run: npm run build
+      working-directory: ./cgv-front/dist
   deploy: 
     runs-on: ubuntu-latest
     steps:
