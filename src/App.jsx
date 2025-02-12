@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://www.naver.com" target="_blank">
           <img src={image} className="img" alt="img" />
         </a>
       </div>
@@ -21,4 +21,4 @@ function App() {
     </>
   )
 }
-export default App
+export default App;
