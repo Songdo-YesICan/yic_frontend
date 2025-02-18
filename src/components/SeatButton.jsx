@@ -1,11 +1,11 @@
-rsc
-
 const SeatButton = ({booked, index}) => {
   return (
     booked ? (
-      <div class="rounded-md bg-gray-300">{index}</div>
+      <div class="flex w-8 h-8 rounded-md bg-navy-500 text-white justify-center items-center">{index}</div>
     ) : (
-      <div class="rounded-md bg-orange-400">{index}</div>
+      <div class="flex w-8 h-8 rounded-md bg-orange-500 text-white justify-center items-center">{index}</div>
     )
   );
 };
+
+export default SeatButton;
